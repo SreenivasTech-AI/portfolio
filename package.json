@@ -1,0 +1,22 @@
+{
+  "name": "sreenivasulu-ai-portfolio",
+  "version": "1.0.0",
+  "description": "Clean and professional portfolio for Sreenivasulu N - AI & ML Engineer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "ai-engineer",
+    "machine-learning",
+    "portfolio",
+    "llms",
+    "vlms",
+    "langgraph",
+    "mcp",
+    "fastapi"
+  ],
+  "author": "Sreenivasulu N",
+  "license": "MIT"
+}

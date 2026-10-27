@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sreenivasulu N | AI & ML Engineer | Autonomous Agents & GenAI</title>
+  <meta name="description" content="Portfolio of Sreenivasulu N — AI & ML Engineer at B2B Software Technologies Ltd. Specializing in Model Context Protocol (MCP), LangGraph agent swarms, clinical document intelligence, and production deep learning.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 3D Interactive Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Ambient Frosted Background Veil (Blurs background so content remains front and center) -->
+  <div class="bg-blur-overlay" id="bg-blur-overlay"></div>
+
+  <!-- Custom Cursor Elements -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Primary Application Wrapper -->
+  <div class="app-container">
+
+    <!-- Floating Navigation Bar -->
+    <header class="navbar">
+      <a href="#home" class="nav-brand">
+        <span class="sparkle">✦</span>
+        <span>SREENIVAS<span style="color: var(--color-primary);">.AI</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience-education" class="nav-link">Experience & Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Web Audio SFX Toggle -->
+        <button class="icon-btn" id="btn-sound-toggle" title="Toggle Synthesizer Sound SFX" aria-label="Toggle Sound">
+          🔊
+        </button>
+
+        <!-- Dynamic Theme Switcher -->
+        <button class="icon-btn" id="btn-theme-cycle" title="Cycle Theme Palette" aria-label="Cycle Theme">
+          🎨
+        </button>
+
+        <!-- Quick Talk Button -->
+        <a href="#contact" class="btn-primary" style="display: none; @media(min-width: 768px){display: inline-flex;}">
+          Let's Talk
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main>
+
+      <!-- ------------------------------------------------------------------ -->
+      <!-- 1. HOME SECTION                                                    -->
+      <!-- ------------------------------------------------------------------ -->
+      <section class="hero-section" id="home">
+        <div class="hero-grid">
+          
+          <!-- Left: Hero Text & Short Sentence -->
+          <div>
+            <div class="hero-status-pill">
+              <span class="pulse-dot"></span>
+              <span>AVAILABLE FOR AI & ML OPPORTUNITIES</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text gradient-glow">Sreenivasulu N</span><br>
+              AI & ML Engineer
+            </h1>
+
+            <p class="hero-short-sentence">
+              Designing resilient autonomous agents, Model Context Protocol (MCP) ecosystems, and production-grade clinical document intelligence systems.
+            </p>
+
+            <p class="hero-subtitle">
+              Engineering high-accuracy LLM & VLM workflows, LangGraph cyclical multi-agent swarms, and FastAPI streaming backends at <strong>B2B Software Technologies Ltd</strong>.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn-primary">
+                Explore Projects <span>→</span>
+              </a>
+              <a href="#contact" class="btn-outline">
+                Let's Talk <span>💬</span>
+              </a>
+              <a href="https://github.com/SreenivasTech-AI" target="_blank" rel="noopener" class="btn-outline" title="View GitHub Repositories">
+                GitHub Profile ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Clean Photo Section -->
+          <div class="hero-photo-wrapper">
+            <div class="photo-card-container">
+              <div class="photo-card-inner">
+                <!-- Replace with your actual photo file (e.g. assets/profile.jpg) anytime -->
+                <img src="assets/profile-placeholder.svg" alt="Sreenivasulu N - AI & ML Engineer" id="hero-profile-photo">
+              </div>
+              <div class="photo-floating-pill">
+                <span class="pulse-live"></span>
+                <span>AI/ML Engineer · B2B Software</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quick Stats Grid -->
+        <div class="stats-grid" id="hero-stats-grid">
+          <!-- Populated from js/data.js -->
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <!-- 2. ABOUT SECTION                                                   -->
+      <!-- ------------------------------------------------------------------ -->
+      <section id="about">
+        <div class="section-header">
+          <span class="mono-tag section-tag">ABOUT ME</span>
+          <h2 class="section-title">Engineering Reliable Intelligence</h2>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left: Clean Photo Card with Social Links -->
+          <div class="about-photo-card">
+            <img src="assets/profile-placeholder.svg" alt="Sreenivasulu N Profile" class="about-avatar-img">
+            <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 4px;">Sreenivasulu N</h3>
+            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-primary); margin-bottom: 8px;">AI & ML Engineer</div>
+            <div style="font-size: 0.85rem; color: var(--color-text-subtle);">📍 Hyderabad, Telangana, India</div>
+
+            <!-- LinkedIn & GitHub with Clean SVG Icons -->
+            <div class="about-social-links">
+              <!-- LinkedIn Icon -->
+              <a href="https://www.linkedin.com/in/sreenivasulu2429" target="_blank" rel="noopener" class="social-circle-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+              <!-- GitHub Icon -->
+              <a href="https://github.com/SreenivasTech-AI" target="_blank" rel="noopener" class="social-circle-btn" title="GitHub Repositories" aria-label="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              </a>
+              <!-- Email Icon -->
+              <a href="mailto:sreenivasulun2429@gmail.com" class="social-circle-btn" title="Send Email" aria-label="Email">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Generated Professional About Content -->
+          <div class="about-content-box">
+            <p class="about-bio-lead">
+              I am an <strong>AI & ML Engineer</strong> with hands-on production experience architecting autonomous agentic workflows, <strong>Model Context Protocol (MCP)</strong> ecosystems, and multimodal document intelligence pipelines. Currently at <strong>B2B Software Technologies Ltd</strong>, I specialize in combining Large Language Models (LLMs), Vision-Language Models (VLMs), and LangGraph to transform unstructured clinical documents and enterprise databases into high-accuracy structured insights.
+            </p>
+
+            <p style="margin-bottom: 24px; font-size: 0.95rem; line-height: 1.7;">
+              My engineering approach prioritizes determinism, strict guardrails, and latency optimization—delivering measurable enterprise value through scalable, deployable AI architectures rather than experimental demos. Whether building natural-language-to-SQL bridges with safe schema isolation or engineering clinical vision transformer pipelines, I focus on system reliability, reproducible benchmarks, and clean APIs.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="about-highlight-pill">
+                <span class="check">✓</span>
+                <span>Model Context Protocol (MCP)</span>
+              </div>
+              <div class="about-highlight-pill">
+                <span class="check">✓</span>
+                <span>LangGraph & Multi-Agent Swarms</span>
+              </div>
+              <div class="about-highlight-pill">
+                <span class="check">✓</span>
+                <span>Multimodal OCR & VLMs</span>
+              </div>
+              <div class="about-highlight-pill">
+                <span class="check">✓</span>
+                <span>FastAPI Microservices & pgvector</span>
+              </div>
+            </div>
+
+            <!-- Resume Button & Talk Button -->
+            <div class="about-actions-row">
+              <a href="#contact" class="btn-primary" id="btn-talk-about">
+                Let's Talk <span>💬</span>
+              </a>
+              <a href="mailto:sreenivasulun2429@gmail.com?subject=Resume%20Request%20-%20Sreenivasulu%20N" class="btn-outline" title="Request full PDF Resume">
+                Download Resume <span>📄</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <!-- 3. EDUCATION & EXPERIENCE SECTION                                  -->
+      <!-- ------------------------------------------------------------------ -->
+      <section id="experience-education">
+        <div class="section-header">
+          <span class="mono-tag section-tag">BACKGROUND & TRAJECTORY</span>
+          <h2 class="section-title">Experience & Education</h2>
+        </div>
+
+        <div class="edu-exp-container">
+          
+          <!-- Experience Column (B2B Software Technologies Ltd) -->
+          <div>
+            <div class="column-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <span>Work Experience</span>
+            </div>
+            
+            <div id="experience-cards-container">
+              <!-- Dynamically populated from js/data.js with exact B2B Software details & 9 bullet points -->
+            </div>
+          </div>
+
+          <!-- Education Column (B.Tech CSE & Intermediate) -->
+          <div>
+            <div class="column-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>Education</span>
+            </div>
+
+            <div id="education-cards-container">
+              <!-- Dynamically populated from js/data.js with G. Pullaiah 80.27% & Sri Narayana 88.25% -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <!-- 4. SKILLS SECTION                                                  -->
+      <!-- ------------------------------------------------------------------ -->
+      <section id="skills">
+        <div class="section-header">
+          <span class="mono-tag section-tag">CORE COMPETENCIES</span>
+          <h2 class="section-title">Technical Skills & Toolkit</h2>
+        </div>
+
+        <div class="skills-container" id="skills-container">
+          <!-- Dynamically populated from js/data.js with animated progress bars -->
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <!-- 5. PROJECTS SECTION                                                -->
+      <!-- ------------------------------------------------------------------ -->
+      <section id="projects">
+        <div class="section-header">
+          <span class="mono-tag section-tag">PORTFOLIO SHOWCASE</span>
+          <h2 class="section-title">Featured Production AI Projects</h2>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="agentic">Agentic AI & MCP</button>
+          <button class="filter-btn" data-filter="genai">Clinical & GenAI</button>
+          <button class="filter-btn" data-filter="vision">Vision & Deep Learning</button>
+        </div>
+
+        <!-- 3D Tilt Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated from js/data.js with 3D tilt tracking -->
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <!-- 6. FOOTER & CLEAN CONTACT SECTION                                  -->
+      <!-- ------------------------------------------------------------------ -->
+      <section id="contact">
+        <div class="section-header">
+          <span class="mono-tag section-tag">GET IN TOUCH</span>
+          <h2 class="section-title">Let's Discuss AI Opportunities</h2>
+        </div>
+
+        <div class="contact-section-wrapper">
+          
+          <!-- Left: Direct Contact Information Cards -->
+          <div class="contact-card">
+            <h3 style="font-size: 1.45rem; color: #fff; margin-bottom: 10px;">Contact Information</h3>
+            <p style="margin-bottom: 24px; font-size: 0.95rem;">
+              Whether you are hiring for an AI/ML Engineer role, exploring enterprise Agentic MCP architectures, or want to collaborate on clinical AI systems—reach out directly below.
+            </p>
+
+            <!-- Phone Number Card with One-Click Copy -->
+            <div class="direct-contact-item">
+              <div class="contact-item-left">
+                <div class="contact-item-icon">📞</div>
+                <div>
+                  <div class="contact-item-label">Direct Phone</div>
+                  <a href="tel:8555879693" class="contact-item-val">+91 8555879693</a>
+                </div>
+              </div>
+              <button class="contact-copy-btn" id="btn-copy-phone" title="Copy Phone Number">Copy</button>
+            </div>
+
+            <!-- Email Address Card with One-Click Copy -->
+            <div class="direct-contact-item">
+              <div class="contact-item-left">
+                <div class="contact-item-icon">✉️</div>
+                <div>
+                  <div class="contact-item-label">Email Address</div>
+                  <a href="mailto:sreenivasulun2429@gmail.com" class="contact-item-val">sreenivasulun2429@gmail.com</a>
+                </div>
+              </div>
+              <button class="contact-copy-btn" id="btn-copy-email" title="Copy Email Address">Copy</button>
+            </div>
+
+            <!-- Social Links Grid with Clean SVG Icons -->
+            <div class="social-links-grid">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/sreenivasulu2429" target="_blank" rel="noopener" class="social-pill">
+                <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/SreenivasTech-AI" target="_blank" rel="noopener" class="social-pill">
+                <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Clean Interactive Message Form -->
+          <div class="contact-card">
+            <h3 style="font-size: 1.45rem; color: #fff; margin-bottom: 20px;">Send a Direct Message</h3>
+            
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="form-name">Your Name</label>
+                <input class="form-input" type="text" id="form-name" placeholder="Sundar Pichai / Recruiter" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-email">Email Address</label>
+                <input class="form-input" type="email" id="form-email" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Role Opportunity / Project Brief</label>
+                <textarea class="form-textarea" id="form-message" placeholder="Describe the AI role, technical challenge, or timeline..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                Transmit Message <span>⚡</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer Bar -->
+    <footer>
+      <div class="footer-inner">
+        <div>
+          <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">✦ SREENIVASULU N</div>
+          <div style="font-size: 0.85rem; color: var(--color-text-muted);">AI & ML Engineer · B2B Software Technologies Ltd · MIT License</div>
+        </div>
+
+        <div class="system-status">
+          <span class="status-indicator"></span>
+          <span>AVAILABLE FOR FULL-TIME ROLES · HYDERABAD / REMOTE</span>
+        </div>
+
+        <div>
+          <a href="#home" class="btn-outline" style="padding: 6px 16px; font-size: 0.8rem;">
+            Back to Top ↑
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Architecture Inspector Modal Overlay -->
+  <div class="modal-overlay" id="arch-modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">✕</button>
+      <h3 id="modal-title" style="font-size: 1.4rem; color: #fff; margin-bottom: 20px;">System Architecture Overview</h3>
+      <div id="modal-body">
+        <!-- Dynamically injected from js/data.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Three.js CDN (with graceful fallback to procedural canvas if offline) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Application Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
